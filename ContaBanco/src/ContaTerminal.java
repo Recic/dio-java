@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
@@ -17,11 +18,13 @@ public class ContaTerminal {
         numero = read.nextInt();
 
         System.out.println("Por favor, digite seu nome: ");
-        nomeCliente = read.next();
+        read.nextLine();
+        nomeCliente = read.nextLine();
 
         System.out.println("Por favor, Digite o saldo: ");
         saldo = read.nextDouble();
+
         
-        System.out.println("Ola " + nomeCliente + ", Obrigado por criar uma conta em nosso banc, sua agência é " + agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque");
+        System.out.println("Ola " + nomeCliente + ", Obrigado por criar uma conta em nosso banco, sua agência é " + agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque");
     }
 }
